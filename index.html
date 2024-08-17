@@ -13,9 +13,15 @@
         h1 {
             margin-bottom: 40px;
         }
+        .description {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #555;
+        }
         .button-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
         .button {
@@ -28,6 +34,7 @@
             font-size: 16px;
             border-radius: 8px;
             transition: background-color 0.3s ease;
+            width: 200px;
         }
         .button:hover {
             background-color: #45a049;
@@ -39,8 +46,14 @@
     <h1>Situs di alihkan ke tempat baru</h1>
 
     <div class="button-container">
-        <a href="https://dash.ridcloud.com" class="button">Dashboard</a>
-        <a href="https://portal.ridcloud.com" class="button">Portal</a>
+        <div>
+            <a href="https://dash.ridcloud.com" class="button">Dashboard</a>
+            <p class="description">Dashboard untuk membeli hosting</p>
+        </div>
+        <div>
+            <a href="https://portal.ridcloud.com" class="button">Portal</a>
+            <p class="description">Portal untuk mengakses console hosting</p>
+        </div>
     </div>
 
 </body>
